@@ -24,7 +24,7 @@ header {
   color: var(--secondary);
   position: relative;
   width: 100%;
-  height: 10vh;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
 }
@@ -34,7 +34,7 @@ header {
 }
 
 .logo-ifsp img {
-  width: 20vh;
+  width: 40vh;
 }
 
 .container {
