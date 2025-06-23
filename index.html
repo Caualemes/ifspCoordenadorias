@@ -18,16 +18,16 @@
 
   <div class="container">
     <div class="sidebar">
-      <button href="#">MENU <img src="imgs/menu.png" alt=""></button>
-
+      <button onclick="toggleMenu()">MENU <img src="imgs/menu.png" alt=""></button>
       <div class="sidebar-menu">
-        <a href="#">Coord</a>
-        <a href="#">Coord</a>
-        <a href="#">Coord</a>
+        <a href="#" onclick="carregarPagina('adm')">Técnico em Administração</a>
+        <a href="#" onclick="carregarPagina('info')">Técnico em Informática</a>
+        <a href="#" onclick="carregarPagina('mec')">Mecânica Industrial</a>
       </div>
+
     </div>
   
-    <div class="main">
+    <div class="main" id="conteudo-principal">
       <div class="main-title">
         <span>COORDENADORIA DE CURSO</span>
         <h1>TÉCNICO EM ADMINISTRAÇÃO</h1>
@@ -35,22 +35,12 @@
   
       <section class="main-section">
         <h3>SOBRE O CURSO</h3>
-        <p>guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha  </p>
+        <p></p>
       </section>
   
       <section class="main-section">
         <h3>SOBRE O CURSO</h3>
-        <p>guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha 
-          guibolinha guibolinha guibolinha guibolinha guibolinha guibolinha  </p>
+        <p></p>
       </section>
   
       <section class="main-coord">
@@ -59,7 +49,6 @@
             <div class="coord info">
             <h3>NOME COORDENADOR</h3>
             <span>Email</span>
-            <span>Fone</span>
           </div>
           <div class="coord horario">
             <h3>HORARIO DE FUNCIONAMENTO</h3>

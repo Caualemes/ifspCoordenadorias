@@ -24,7 +24,7 @@ header {
   color: var(--secondary);
   position: relative;
   width: 100%;
-  height: fit-content;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
 }
@@ -34,7 +34,7 @@ header {
 }
 
 .logo-ifsp img {
-  width: 40vh;
+  width: 20vh;
 }
 
 .container {
@@ -87,6 +87,28 @@ header {
   border-bottom: 3px solid var(--primary);
 }
 
+.sidebar-menu {
+  width: 100%;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  padding: 0;
+}
+
+.sidebar-menu.show {
+  max-height: 500px; /* Valor alto suficiente pra caber os links */
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
 .main {
   width: 70%;
   margin-left: 2rem;
@@ -119,8 +141,9 @@ header {
 
 .coord-details {
   display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between; /* espaça igualmente */
+  gap: 2rem; /* espaço entre os dois blocos */
+  flex-wrap: nowrap; /* evita quebra de linha */
   margin-left: 2.5rem;
 }
 
@@ -128,8 +151,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 3rem;
-  gap: .5rem;
+  white-space: nowrap; /* evita quebra de linha no texto */
+  margin-right: 0; /* remove margem para evitar quebras extras */
 }
 
 .coord h3 {
@@ -163,15 +186,15 @@ footer p {
 @media (max-width: 768px) {
   header {
     height: auto;
-    align-items: flex-start;
-  }
-
-  .logo-ifsp {
-    margin: 1rem 1rem 0.5rem 1rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo-ifsp img {
-    width: 50vh;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  
   }
 
   .container {
