@@ -23,7 +23,7 @@ function carregarPagina(pagina) {
           </div>
           <div class="coord horario">
             <h3>HORÁRIO</h3>
-            <span>Segunda a Sexta, 08h às 18h</span>
+            <span>Segunda a Sexta, 08h às 22h</span>
           </div>
         </div>
       </section>
@@ -77,7 +77,7 @@ function carregarPagina(pagina) {
           </div>
           <div class="coord horario">
             <h3>HORÁRIO</h3>
-            <span>Segunda a Sexta, 07h às 23h</span>
+            <span>Segunda a Sexta, 08h às 22h</span>
           </div>
         </div>
       </section>
